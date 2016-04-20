@@ -181,13 +181,13 @@ module.exports = function(grunt) {
             staging: {
                  options: {
                     dest: "~/www/path-to-folder-no-trailing-slash",
-                    host: "jswebdev@jswebdev.ch"
+                    host: "username@jswebdev.ch"
                 }
             },
             production: {
                 options: {
                     dest: "~/www/path-to-folder-no-trailing-slash",
-                    host: "jswebdev@jswebdev.ch"
+                    host: "username@jswebdev.ch"
                 }
             }
         }
