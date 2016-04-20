@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.headroom {
+   will-change: transform;
+   transition: transform 200ms linear;
+}
+.headroom--pinned {
+   transform: translateY(0%);
+}
+.headroom--unpinned {
+   transform: translateY(-100%);
+}
+
+#header{
+    height: $header-height;
+    padding: 0 20px;
+    background: $header-bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    @include bp(tablet) {  
+        position: static;
+        width: 20%;
+        float: left;
+    }
+
+    a.logo{
+        padding: 0 20px;
+        line-height: $header-height;
+        height: $header-height;
+        float: left;
+        font-size: 1.4em;
+        text-decoration: none;
+    }
+
+    .menu-toggle{
+        border: none;
+        margin-top: 15px;
+        margin-bottom: 0;
+        float: right;
+
+        @include bp(tablet) {  
+               display: none;
+        }
+    }
+    
+
+}
